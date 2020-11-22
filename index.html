@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loadingProcess()">
+    
+<h1>JS EVENTS</h1>
+
+<h4 onmouseover="this.style.backgroundColor= 'yellow'">1. <em>onmouseover</em></h4>
+
+<p onmouseover="this.style.backgroundColor= 'red'">Here is some text</p>
+
+<h4>2. <em>onmouseout</em></h4>
+
+<p>
+    Despite one sentence is put in comments, both of the variants below are working. 
+    The first one is done right in HTML, the second one - in JavaScript.
+</p>
+
+<!-- <p onmouseout="this.style.backgroundColor='white'" style="background-color: pink;">When you move the pointer from the text, the background color will get white.</p> -->
+
+<p onmouseout="mouseOut()" id="mouseout" style="background-color: pink;">When you move the pointer from the text, the background color will get white.</p>
+
+
+<h4>3. <em>onchange</em></h4>
+
+<select name="" id="myOption" onchange="myFunction()">
+    <option value="Cinema">Cinema</option>
+    <option value="Theatre">Theatre</option>
+    <option value="Museum">Museum</option>
+    <option value="Park">Park</option>
+    <option value="Garden">Garden</option>
+</select>
+<p id="demo"></p>
+
+<br>
+<h4>4. <em>onclick</em></h4>
+<button onclick="this.innerHTML=Date()">Want to know the time? Press the button for the answer</button>
+
+
+<h4>5. <em>onkeydown</em></h4>
+
+At least start typing something in the input field below.<br>
+<input onkeydown="myFunction()" type="text">
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
